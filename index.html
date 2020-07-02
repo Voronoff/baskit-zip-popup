@@ -1,0 +1,23 @@
+<html>
+    <header>
+        <title>Baskit Popup</title>
+        <link href="baskit_zip_popup.css" rel="stylesheet">
+    </header>
+    <body>
+        <button id="baskitZipPopupButton" >Popup</button>
+        <div id="baskitZipPopupModal" class="modal">
+            <div id="baskitZipPopupContent" class=modal-content>
+                <div id="baskitZipPopupInitial">
+                    <p>Enter your ZIP code to see if we deliver in your area: <input id="baskitZipPopupInput" type="number"> <button id="baskitZipPopupInputButton">Check</button></p>
+                </div>
+                <div id="baskitZipPopupSuccess">
+                    <p>Yes, we deliver to you. <a href="link to product">Order Now!</a></p>
+                </div>
+                <div id="baskitZipPopupFailure">
+                    <p>We don't deliver there yet. Sign up for news about our expansion [php newsletter signup] or <a href="link to donation">donate now!</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="baskit_zip_popup.js"></script>
+</html>
