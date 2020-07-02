@@ -27,12 +27,21 @@ window.onclick = function(event) {
     }
 }
   
-zip_popup_input_button.onclick = function() {
-    console.log (zip_popup_input.value)
+zip_popup_input_button.onclick = function(){
+    check_zip_codes();
+};
+
+zip_popup_input.addEventListener("keyup", function (e) {
+    if (e.key === "Enter") {
+        check_zip_codes();
+    }
+});
+
+function check_zip_codes() {
     if(zip_popup_zipcodes.includes(parseInt(zip_popup_input.value))) {
         zip_popup_success.style.display = "block";
     }else{
         zip_popup_failure.style.display = "block";
     }
     zip_popup_initial.style.display = "none";
-}
+};
